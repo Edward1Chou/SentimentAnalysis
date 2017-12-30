@@ -1,0 +1,26 @@
+"backend: !!python/unicode 'tensorflow'\nclass_name: Sequential\nconfig:\n- class_name:\
+  \ Embedding\n  config:\n    activity_regularizer: null\n    batch_input_shape: !!python/tuple\
+  \ [null, 100]\n    dtype: float32\n    embeddings_constraint: null\n    embeddings_initializer:\n\
+  \      class_name: RandomUniform\n      config: {maxval: 0.05, minval: -0.05, seed:\
+  \ null}\n    embeddings_regularizer: null\n    input_dim: 8305\n    input_length:\
+  \ 100\n    mask_zero: true\n    name: embedding_4\n    output_dim: 100\n    trainable:\
+  \ true\n- class_name: LSTM\n  config:\n    activation: tanh\n    activity_regularizer:\
+  \ null\n    bias_constraint: null\n    bias_initializer:\n      class_name: Zeros\n\
+  \      config: {}\n    bias_regularizer: null\n    dropout: 0.0\n    go_backwards:\
+  \ false\n    implementation: 1\n    kernel_constraint: null\n    kernel_initializer:\n\
+  \      class_name: VarianceScaling\n      config: {distribution: uniform, mode:\
+  \ fan_avg, scale: 1.0, seed: null}\n    kernel_regularizer: null\n    name: lstm_4\n\
+  \    recurrent_activation: hard_sigmoid\n    recurrent_constraint: null\n    recurrent_dropout:\
+  \ 0.0\n    recurrent_initializer:\n      class_name: Orthogonal\n      config: {gain:\
+  \ 1.0, seed: null}\n    recurrent_regularizer: null\n    return_sequences: false\n\
+  \    return_state: false\n    stateful: false\n    trainable: true\n    unit_forget_bias:\
+  \ true\n    units: 50\n    unroll: false\n    use_bias: true\n- class_name: Dropout\n\
+  \  config: {name: dropout_4, noise_shape: null, rate: 0.5, seed: null, trainable:\
+  \ true}\n- class_name: Dense\n  config:\n    activation: softmax\n    activity_regularizer:\
+  \ null\n    bias_constraint: null\n    bias_initializer:\n      class_name: Zeros\n\
+  \      config: {}\n    bias_regularizer: null\n    kernel_constraint: null\n   \
+  \ kernel_initializer:\n      class_name: VarianceScaling\n      config: {distribution:\
+  \ uniform, mode: fan_avg, scale: 1.0, seed: null}\n    kernel_regularizer: null\n\
+  \    name: dense_4\n    trainable: true\n    units: 3\n    use_bias: true\n- class_name:\
+  \ Activation\n  config: {activation: softmax, name: activation_4, trainable: true}\n\
+  keras_version: 2.1.1\n"
